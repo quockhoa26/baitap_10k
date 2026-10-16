@@ -1,0 +1,26 @@
+.container {
+    width: 100%;
+}
+
+.left-column {
+    width: 60%;
+    float: left;
+    background-color: lightblue;
+    padding: 20px;
+    box-sizing: border-box; /* Giúp padding không làm tăng tổng chiều rộng */
+}
+
+.right-column {
+    width: 38%;
+    float: right;
+    background-color: lightgreen;
+    padding: 20px;
+    box-sizing: border-box; /* Bổ sung box-sizing để kích thước chuẩn xác */
+}
+
+/* Kỹ thuật clearfix để xử lý float */
+.container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
